@@ -1,0 +1,226 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 150%;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #007aff;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadeIn;
+  animation-duration: 1.5;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+#myDiv {
+  display: none;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.open-sans-regular {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-accent: #007aff;
+  --clr-darkModeSwitchBg: #000;
+  --clr-darkModeSwitchI: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.35);
+  --background: var(--clr-white);
+  --foreground: var(--clr-black);
+}
+
+.darkmode {
+  --clr-white: #101010;
+  --clr-black: #fff;
+  --clr-accent: #007aff;
+  --clr-darkModeSwitchBg: #fff;
+  --clr-darkModeSwitchI: #000;
+  --shadow-color: rgba(255, 255, 255, 0.25);
+  --background: var(--clr-white);
+  --foreground: var(--clr-black);
+  transition: 0.5s ease-out;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow: hidden;
+  transition: 0.5s ease-out;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  justify-content: center;
+  margin-left: 15%;
+  padding: 0 25% 0 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+#darkModeSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  position: absolute;
+  right: 0%;
+  margin: 12px;
+  padding: 0;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 7px var(--shadow-color);
+  transition: ease-in 0.3s;
+  background-color: var(--background);
+}
+
+#darkModeSwitch i {
+  font-size: 24px;
+  transition: ease-in 0.3s;
+  color: var(--foreground);
+}
+
+#darkModeSwitch:hover {
+  background-color: var(--clr-darkModeSwitchBg);
+}
+
+#darkModeSwitch:hover i {
+  color: var(--clr-darkModeSwitchI);
+  transition: ease-out 0.3s;
+}
+
+#nickname {
+  font-style: italic;
+  background: -webkit-linear-gradient(90deg, rgb(0, 133, 255) 0%, rgb(0, 215, 255) 72%, rgb(0, 133, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+  font-style: italic;
+  font-size: 24px;
+  margin: 4px 0 16px 0;
+}
+
+.links {
+  display: flex;
+  margin: 3vh 0 0 3px;
+  justify-content: space-between;
+  width: 10em;
+}
+
+.links-btn {
+  color: #7a7a7a;
+  transition: ease-out 0.2s;
+  box-shadow: 0 0px 7px var(--shadow-color);
+  border-radius: 12px;
+  margin-right: 12px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.links-btn i {
+  transition: ease-out 0.2s;
+  font-size: 24px;
+}
+
+.links-btn:hover {
+  transition: ease-out 0.2s;
+  box-shadow: 0 0px 7px rgba(0, 133, 255, 0.75);
+}
+
+.links-btn:hover i {
+  color: #007aff;
+  transition: ease-out 0.2s;
+}/*# sourceMappingURL=style.css.map */

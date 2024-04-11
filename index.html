@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>v3sker | Home</title> 
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/img/favicon.png">
     <script src="https://kit.fontawesome.com/83be326cca.js" crossorigin="anonymous"></script>
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
-    rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
@@ -23,20 +19,20 @@
     <button onclick="darkmode()" id="darkModeSwitch" class="fadeIn">
         <i class="fa-solid fa-circle-half-stroke"></i>
     </button>
-    <main style="display: none;" id="myDiv" class="animate-bottom">
-        <h1 class="montserrat-bold"">Daniil <span style="font-style: italic; color: rgb(0, 122, 255);">v3sker</span> Gynga</h1>
-        <p class="open-sans-regular" style="font-style: italic;font-size: 24px ; margin: 4px 0 16px 0;">This page is empty... just for now... I  wish.</p>
+    <!-- Hero Section -->
+    <main id="myDiv" class="animate-bottom" style="display: none;">
+        <h1 class="montserrat-bold"">Daniil <span id="nickname">v3sker</span> Gynga</h1>
+        <p class="hero-text open-sans-regular">This page is empty... just for now... I  wish.</p>
         <div class="links">
             <a class="links-btn" href="https://github.com/v3sKer" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a class="links-btn" href="https://www.linkedin.com/in/v3sker/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a class="links-btn" href="https://t.me/reKs3v" target="_blank"><i class="fa-brands fa-telegram"></i></a>
             <a class="links-btn" href="https://discords.com/bio/p/v3sker" target="_blank"><i class="fa-brands fa-discord"></i></a>
             <a class="links-btn" href="https://steamcommunity.com/id/v3sker/" target="_blank"><i class="fa-brands fa-steam"></i></a>
-            <a class="links-btn" href="CV.pdf" target="_blank"><i class="fa-solid fa-file-contract"></i></a>
+            <a class="links-btn" href="assets/CV.pdf" target="_blank"><i class="fa-solid fa-file-contract"></i></a>
         </div>
     </main>
-    
+    <!-- End hero section -->
     <script src="script.js"></script>
 </body>
-
 </html>
