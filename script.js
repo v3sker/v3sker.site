@@ -13,7 +13,6 @@ var myVar;
 
 // dark-mode
 let darkMode = localStorage.getItem('darkMode')
-const darkModeToggle = document.querySelector('#darkModeSwitch')
 
 const enableDarkMode = () => {
     document.body.classList.add("darkmode")
