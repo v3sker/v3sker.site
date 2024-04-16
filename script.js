@@ -1,17 +1,18 @@
 // loader
 var myVar;
-        
-    function myFunction() {
-        myVar = setTimeout(showPage, 1500);
-    }
 
-    function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("myDiv").style.display = "flex";
-        document.getElementById("darkModeSwitch").style.display = "flex";
-    }
+function loader() {
+    myVar = setTimeout(showPage, 1500);
+}
 
-// dark-mode
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("bg-ellipse").style.display = "block";
+    document.getElementById("bg-ellipse2").style.display = "block";
+    document.getElementById("mainContainer").style.display = "flex";
+}
+
+/* dark-mode
 let darkMode = localStorage.getItem('darkMode')
 
 const enableDarkMode = () => {
@@ -35,4 +36,4 @@ function darkmode() {
     } else {
         disableDarkMode();
     }
-}
+}*/
