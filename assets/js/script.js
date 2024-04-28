@@ -21,7 +21,7 @@ function showPage() {
   writing()
 }
 
-// VERY hardcoded hero text
+// EXTREMELLY hardcoded hero text
 
 const textContainer = document.querySelector('#textWriter')
 
