@@ -10,7 +10,7 @@ This repo is my live Personal Website [v3sker.site](https://v3sker.site/), built
 
 "This page is pretty empty.. just for now.. I wish", in plans is refactoring it on Tailwind, add some immersive front-end features, and overall fill it with VERY NEEDED INFO :)
 
-# Requirements
+## Requirements
 
 - Git.
 - Any modern browser.
