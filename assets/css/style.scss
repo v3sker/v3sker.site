@@ -76,13 +76,13 @@
 }
 
 .ft-serif {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .ft-code {
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -159,7 +159,7 @@ main {
 
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0 0 1rem 0;
   font-size: var(--hero-ft-size);
   line-height: var(--hero-line-h);
   letter-spacing: var(--hero-letter-sp);
@@ -181,21 +181,25 @@ main {
 .hero p {
   font-size: 1.8rem;
   text-align: center;
-  margin-top: 3rem;
   color: rgb(180, 188, 208);
+  margin: 0;
 }
 
 #textWriterWrapper {
+  padding: 3rem 0 1.8rem 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   user-select: none;
 }
 
 .input-cursor {
+  --cursor-height: 24px;
+  --cursor-width: 2px;
+
   display: inline-block;
-  width: 2px;
-  height: 24px;
+  width: var(--cursor-width);
+  height: var(--cursor-height);
   background-color: rgb(180, 188, 208);
   margin-top: 1rem;
   animation: blink .5s linear infinite alternate;
@@ -219,6 +223,9 @@ main {
     --hero-span-letter-sp: -1.4px;
   }
   .hero p{font-size: 1.4rem}
+  .input-cursor{
+    --cursor-height: 1.8rem;
+  }
 }
 
 @media only screen and (width < 595px) {
@@ -234,6 +241,9 @@ main {
     font-size: 0.95rem;
   }
   .links-wrapper {scale: 80%;}
+  .input-cursor{
+    --cursor-height: 1.3rem;
+  }
 }
 
 .links-wrapper {
