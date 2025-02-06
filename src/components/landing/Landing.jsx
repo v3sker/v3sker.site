@@ -10,7 +10,7 @@ export default function Landing() {
   const { theme } = useTheme();
 
   return (
-    <div className="relative w-full h-full lg:w-[80%] lg:h-[400px] bg-background/80 rounded-lg overflow-hidden">
+    <div className="relative w-full h-full lg:w-[80%] lg:h-[400px] max-w-[1200px] bg-background/80 rounded-lg overflow-hidden">
       <div className="absolute inset-0">
         <Waves
           lineColor={theme === "dark" ? "rgba(255, 255, 255, 0.3)" : "rgba(0, 0, 0, 0.3)"}
@@ -43,7 +43,7 @@ export default function Landing() {
           </TextEffect>
         </div>
 
-        <div className={'flex gap-8'}>
+        <div className={'mb-16 lg:mb-0 flex gap-8'}>
           <a href="https://github.com/v3sKer" target='_blank'>
             <TextEffect per='char' preset='fade' className={`lg:text-xl font-medium font-mono text-blue-700 hover:text-purple-500 w-fit`}>
               Github
