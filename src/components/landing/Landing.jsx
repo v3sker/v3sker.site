@@ -31,7 +31,7 @@ export default function Landing() {
         <div>
           <HyperText
             className="text-6xl lg:text-7xl font-bold  text-black dark:text-white"
-            text="v3sker"
+            text="DANIIL GYNGA"
           />
 
           <TextEffect per='word' preset='fade' className={`lg:text-xl lg:font-medium font-mono`}>
