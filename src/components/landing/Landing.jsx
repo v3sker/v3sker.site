@@ -35,11 +35,11 @@ export default function Landing() {
           />
 
           <TextEffect per='word' preset='fade' className={`lg:text-xl lg:font-medium font-mono`}>
-            Full-Stack Developer.
+            Founder of btw.md
           </TextEffect>
-
+          
           <TextEffect per='word' preset='fade' className={`lg:text-xl lg:font-medium font-mono`}>
-            Founder of Bitwave Software SRL.
+            Full-Stack Engineer.
           </TextEffect>
         </div>
 
