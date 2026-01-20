@@ -10,7 +10,7 @@ export default function Landing() {
   const { theme } = useTheme();
 
   return (
-    <div className="relative w-full h-full lg:w-[80%] lg:h-[400px] max-w-[1200px] bg-background/80 rounded-lg overflow-hidden">
+    <div className="relative w-full h-full lg:w-[80%] lg:h-[400px] max-w-[1400px] bg-background/80 rounded-lg overflow-hidden">
       <div className="absolute inset-0">
         <Waves
           lineColor={theme === "dark" ? "rgba(255, 255, 255, 0.3)" : "rgba(0, 0, 0, 0.3)"}
@@ -27,23 +27,31 @@ export default function Landing() {
         />
       </div>
 
-      <div className="relative z-10 p-8 h-full flex flex-col justify-between">
-        <div>
+      <div className="relative z-10 p-4 md:p-8 h-full flex flex-col justify-between">
+        <div className="mt-10 md:mt-0">
           <HyperText
-            className="text-6xl lg:text-7xl font-bold  text-black dark:text-white"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold  text-black dark:text-white"
             text="DANIIL GYNGA"
           />
 
-          <TextEffect per='word' preset='fade' className={`lg:text-xl lg:font-medium font-mono`}>
-            Founder of btw.md
-          </TextEffect>
+          <div className="flex gap-2 items-center lg:text-xl lg:font-medium font-mono">
+            <TextEffect per='word' preset='fade'>
+              Founder of
+            </TextEffect>
+
+            <a href="https://btw.md" target='_blank'>
+              <TextEffect per='char' preset='fade' className={`lg:text-xl font-medium font-mono text-blue-700 hover:text-purple-500 w-fit`}>
+                btw.md
+              </TextEffect>
+            </a>
+          </div>
           
           <TextEffect per='word' preset='fade' className={`lg:text-xl lg:font-medium font-mono`}>
-            Full-Stack Engineer.
+            Full-Stack Engineer
           </TextEffect>
         </div>
 
-        <div className={'mb-16 lg:mb-0 flex gap-8'}>
+        <div className={'mb-16 lg:mb-0 flex flex-col md:flex-row gap-4 md:gap-8'}>
           <a href="https://github.com/v3sKer" target='_blank'>
             <TextEffect per='char' preset='fade' className={`lg:text-xl font-medium font-mono text-blue-700 hover:text-purple-500 w-fit`}>
               Github
